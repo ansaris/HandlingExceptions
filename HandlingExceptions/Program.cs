@@ -14,7 +14,10 @@ namespace HandlingExceptions
         {
             try
             {
-                string content = File.ReadAllText(@"C:\Lesson\Example.txt");
+                string content = File.ReadAllText(@"C:\Lesson\Example.txt"); 
+                // Find all possible exceptions for the method File.ReadAllText
+                // Create sensible human-readable messages to help the user troubleshoot the issue
+                // Send the information back to yourself for future bug fixing or giving the user a solution.
                 Console.WriteLine(content);
             }
             catch (FileNotFoundException ex)
